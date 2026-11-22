@@ -1,0 +1,487 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Activity Leaders | ReCraft Hub</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon"
+          href="images/recraft-hub-logo.png"
+          type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="site-header">
+        <div class="container header-row">
+
+            <a href="index.html" class="brand">
+                <img src="images/recraft-hub-logo.png"
+                     alt="ReCraft Hub logo"
+                     width="54" height="54">
+
+                <span class="brand-name">
+                    ReCraft <span class="hub">Hub</span>
+                </span>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="offerings.html">
+                        Offerings
+                    </a></li>
+
+                    <li><a href="about.html">
+                        About Us
+                    </a></li>
+
+                    <li><a href="member-dashboard.html">
+                        Member Dashboard
+                    </a></li>
+
+                    <li><a href="manager-dashboard.html"
+                           class="active">
+                        Manager Dashboard
+                    </a></li>
+
+                    <li><a href="idea-board.html">
+                        Idea Board
+                    </a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="manager-dashboard.html">
+                        Manager Dashboard
+                    </a>
+                </li>
+
+                <li class="current">
+                    Manage Activity Leaders
+                </li>
+            </ol>
+        </nav>
+
+
+        <!-- Manage Leaders -->
+        <section id="manage-leaders">
+
+            <h1 class="page-title">
+                Manage Activity Leaders
+            </h1>
+
+            <p class="manage-description">
+                Manage your club's activity leaders and
+                instructors. Select members for deletion
+                or add a new activity leader.
+            </p>
+
+
+            <!-- Current Team -->
+            <section class="manage-section">
+
+                <h2>Current Team</h2>
+
+                <p>
+                    Select one or more activity leaders
+                    to remove from the team.
+                </p>
+
+                <form class="delete-leaders-form"
+                      action="#"
+                      method="get">
+
+                    <div class="manage-leaders-list">
+
+                        <!-- Leader 1 -->
+                        <label class="manage-leader-card">
+                            <img
+                                src="images/leader-dana-alhelal.svg"
+                                alt="Dana Alhelal"
+                                width="70" height="70">
+
+                            <span class="manage-leader-name">
+                                Dana Alhelal
+                            </span>
+
+                            <input type="checkbox"
+                                   name="delete_leaders"
+                                   value="dana">
+                        </label>
+
+
+                        <!-- Leader 2 -->
+                        <label class="manage-leader-card">
+                            <img
+                                src="images/leader-jana-alzimami.svg"
+                                alt="Jana Alzimami"
+                                width="70" height="70">
+
+                            <span class="manage-leader-name">
+                                Jana Alzimami
+                            </span>
+
+                            <input type="checkbox"
+                                   name="delete_leaders"
+                                   value="jana">
+                        </label>
+
+
+                        <!-- Leader 3 -->
+                        <label class="manage-leader-card">
+                            <img
+                                src="images/leader-raneem-alsheddi.svg"
+                                alt="Raneem Alsheddi"
+                                width="70" height="70">
+
+                            <span class="manage-leader-name">
+                                Raneem Alsheddi
+                            </span>
+
+                            <input type="checkbox"
+                                   name="delete_leaders"
+                                   value="raneem">
+                        </label>
+
+
+                        <!-- Leader 4 -->
+                        <label class="manage-leader-card">
+                            <img
+                                src="images/leader-arjwan-alwehaibi.svg"
+                                alt="Arjwan Alwehaibi"
+                                width="70" height="70">
+
+                            <span class="manage-leader-name">
+                                Arjwan Alwehaibi
+                            </span>
+
+                            <input type="checkbox"
+                                   name="delete_leaders"
+                                   value="arjwan">
+                        </label>
+
+
+                        <!-- Leader 5 -->
+                        <label class="manage-leader-card">
+                            <img
+                                src="images/leader-noura-alqahtani.svg"
+                                alt="Noura Al-Qahtani"
+                                width="70" height="70">
+
+                            <span class="manage-leader-name">
+                                Noura Al-Qahtani
+                            </span>
+
+                            <input type="checkbox"
+                                   name="delete_leaders"
+                                   value="noura">
+                        </label>
+
+
+                        <!-- Leader 6 -->
+                        <label class="manage-leader-card">
+                            <img
+                                src="images/leader-rawan-alharbi.svg"
+                                alt="Rawan Al-Harbi"
+                                width="70" height="70">
+
+                            <span class="manage-leader-name">
+                                Rawan Al-Harbi
+                            </span>
+
+                            <input type="checkbox"
+                                   name="delete_leaders"
+                                   value="rawan">
+                        </label>
+
+                    </div>
+
+                    <button type="submit"
+                            class="btn manage-delete-btn">
+                        Delete Selected
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- Add New Activity Leader -->
+            <section class="manage-section add-leader-section">
+
+                <h2>Add a New Activity Leader</h2>
+
+                <p>
+                    Complete the form below to add
+                    a new activity leader or instructor.
+                </p>
+
+                <form class="add-leader-form"
+                      action="#"
+                      method="get">
+
+                    <div class="manage-form-grid">
+
+                        <!-- Name -->
+                        <div class="form-field">
+                            <label for="leader-name">
+                                Full Name
+                            </label>
+
+                            <input type="text"
+                                   id="leader-name"
+                                   name="name"
+                                   placeholder="Enter full name"
+                                   required>
+                        </div>
+
+
+                        <!-- Photo -->
+                        <div class="form-field">
+                            <label for="leader-photo">
+                                Photo
+                            </label>
+
+                            <input type="file"
+                                   id="leader-photo"
+                                   name="photo"
+                                   accept="image/*"
+                                   required>
+                        </div>
+
+
+                        <!-- Date of Birth -->
+                        <div class="form-field">
+                            <label for="leader-dob">
+                                Date of Birth
+                            </label>
+
+                            <input type="date"
+                                   id="leader-dob"
+                                   name="dob"
+                                   max = "2008-12-31"
+                                   required>
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-field">
+                            <label for="leader-email">
+                                Email
+                            </label>
+
+                            <input type="email"
+                                   id="leader-email"
+                                   name="email"
+                                   placeholder="example@email.com"
+                                   required>
+                        </div>
+
+
+                        <!-- Expertise -->
+                        <div class="form-field">
+                            <label for="leader-expertise">
+                                Area of Expertise
+                            </label>
+
+                            <input type="text"
+                                   id="leader-expertise"
+                                   name="expertise"
+                                   placeholder="Enter area of expertise"
+                                   required>
+                        </div>
+
+
+                        <!-- Skills -->
+                        <div class="form-field">
+                            <label for="leader-skills">
+                                Skills
+                            </label>
+
+                            <textarea id="leader-skills"
+                                      name="skills"
+                                      rows="3"
+                                      placeholder="Enter relevant skills"
+                                      required></textarea>
+                        </div>
+
+
+                        <!-- Education -->
+                        <div class="form-field manage-full-width">
+                            <label for="leader-education">
+                                Education
+                            </label>
+
+                            <input type="text"
+                                   id="leader-education"
+                                   name="education"
+                                   placeholder="Enter education details"
+                                   required>
+                        </div>
+
+                    </div>
+
+                    <button type="submit"
+                            class="btn manage-add-btn">
+                        Add Activity Leader
+                    </button>
+
+                </form>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="site-footer">
+
+        <div class="container footer-row">
+
+            <!-- Social Media -->
+            <div class="footer-col">
+                <h4>Social Media</h4>
+
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <span class="social-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </span>
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <span class="social-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://x.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <span class="social-icon">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </span>
+                            X
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Footer Center -->
+            <div class="footer-col footer-center">
+
+                <a href="index.html" class="footer-brand">
+
+                    <img src="images/recraft-hub-logo.png"
+                         alt="ReCraft Hub logo"
+                         width="64" height="64">
+
+                    <span class="brand-name">
+                        ReCraft <span class="hub">Hub</span>
+                    </span>
+                </a>
+
+                <p class="copyright">
+                    <small>
+                        &copy; RECRAFT HUB 2026.
+                        ALL RIGHTS RESERVED.
+                    </small>
+                </p>
+
+            </div>
+
+
+            <!-- Contact Us -->
+            <div class="footer-col contact-col">
+
+                <div>
+                    <h4>Contact Us</h4>
+
+                    <address>
+                        <ul>
+                            <li>
+                                <span class="social-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+
+                                <a href="tel:+966111234567">
+                                    +966 11 123 4567
+                                </a>
+                            </li>
+
+                            <li>
+                                <span class="social-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+
+                                <a href="mailto:info@recrafthub.com">
+                                    info@recrafthub.com
+                                </a>
+                            </li>
+
+                            <li>
+                                <span class="social-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+
+                                Riyadh, Saudi Arabia
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+  <!-- Phase 3: applies the chosen theme -->
+  <script src="js/home.js"></script>
+  <script src="js/manage-activity-leaders.js"></script>
+</body>
+</html>

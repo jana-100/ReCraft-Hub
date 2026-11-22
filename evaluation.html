@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReCraft Hub | Evaluation</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/recraft-hub-logo.png" type="image/png">
+</head>
+<body>
+<!-- Header: logo + navigation bar (Flexbox) -->
+<header id="site-header">
+<div class="container header-row">
+<a href="index.html" class="brand">
+<img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="54" height="54">
+<span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+</a>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="offerings.html">Offerings</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="member-dashboard.html" class="active">Member Dashboard</a></li>
+<li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+<li><a href="idea-board.html">Idea Board</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<!-- Breadcrumb -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">Home</a></li>
+<li><a href="member-dashboard.html">Member Dashboard</a></li>
+<li class="current">Evaluation a Completed Offering</li>
+</ol>
+</nav>
+
+<!-- Page title -->
+<h1 class="page-title">Evaluate a Completed Offering</h1>
+
+<!-- Evaluation form -->
+<section id="evaluate">
+<form id="evaluation-form" action="#" method="post" class="form-panel">
+<p class="form-field">
+<label for="completed-offering">Select Completed Offering</label>
+<select id="completed-offering" name="offering">
+<option value="">Choose an offering</option>
+<option value="upcycled-planters">Upcycled Planters</option>
+<option value="recycled-notebooks">Recycled Notebooks</option>
+<option value="sustainable-tote-bags">Sustainable Tote Bags</option>
+<option value="glass-jar-lanterns">Glass Jar Lanterns</option>
+<option value="denim-pouches">Denim Pouch Workshop</option>
+<option value="community-swap-day">Community Swap Day</option>
+</select>
+</p>
+
+<fieldset class="rating" id="rating-box">
+<legend>Rating</legend>
+<div class="star-rating">
+<input type="radio" id="eval-rate-5" name="rating" value="5">
+<label for="eval-rate-5" title="5 stars">&#9733;</label>
+<input type="radio" id="eval-rate-4" name="rating" value="4">
+<label for="eval-rate-4" title="4 stars">&#9733;</label>
+<input type="radio" id="eval-rate-3" name="rating" value="3">
+<label for="eval-rate-3" title="3 stars">&#9733;</label>
+<input type="radio" id="eval-rate-2" name="rating" value="2">
+<label for="eval-rate-2" title="2 stars">&#9733;</label>
+<input type="radio" id="eval-rate-1" name="rating" value="1">
+<label for="eval-rate-1" title="1 star">&#9733;</label>
+</div>
+</fieldset>
+
+<p class="form-field">
+<label for="written-feedback">Written Feedback</label>
+<textarea id="written-feedback" name="feedback" rows="5"></textarea>
+</p>
+
+<p><input type="submit" value="Submit" class="btn"></p>
+</form>
+</section>
+</main>
+
+<!-- Footer -->
+<footer id="site-footer">
+<div class="container footer-row">
+<div class="footer-col">
+<h4>Social Media</h4>
+<ul>
+<li><a href="https://www.facebook.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span>Facebook</a></li>
+<li><a href="https://www.instagram.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-instagram"></i></span>Instagram</a></li>
+<li><a href="https://x.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-x-twitter"></i></span>X</a></li>
+</ul>
+</div>
+<div class="footer-col footer-center">
+<a href="index.html" class="footer-brand">
+<img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="64" height="64">
+<span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+</a>
+<p class="copyright"><small>&copy; RECRAFT HUB 2026. ALL RIGHTS RESERVED.</small></p>
+</div>
+<div class="footer-col contact-col">
+<div>
+<h4>Contact Us</h4>
+<address>
+<ul>
+<li><span class="social-icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+966111234567">+966 11 123 4567</a></li>
+<li><span class="social-icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:info@recrafthub.com">info@recrafthub.com</a></li>
+<li><span class="social-icon"><i class="fa-solid fa-location-dot"></i></span>Riyadh, Saudi Arabia</li>
+</ul>
+</address>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="js/evaluation.js"></script>
+  <!-- Phase 3: applies the chosen theme -->
+  <script src="js/home.js"></script>
+</body>
+</html>

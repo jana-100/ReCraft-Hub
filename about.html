@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | ReCraft Hub</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/recraft-hub-logo.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="brand">
+        <img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="54" height="54">
+        <span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offerings.html">Offerings</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a href="idea-board.html">Idea Board</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li class="current">About Us</li>
+    </ol>
+  </nav>
+
+  <main class="container">
+
+    <!-- Club Mission -->
+    <section id="about-mission">
+      <h1 class="page-title">About Us</h1>
+      <h2>Meet Our Mission</h2>
+      <p>
+        ReCraft Hub is a student-run creative upcycling club
+        dedicated to transforming discarded everyday materials
+        into useful and beautiful new products.
+      </p>
+      <p>
+        Our mission is to reduce waste, promote sustainable
+        habits, and help members develop practical skills
+        through creative workshops and activities.
+        We provide a welcoming community where people
+        can learn, share ideas, and express their creativity.
+      </p>
+    </section>
+
+    <!-- Activity Leaders -->
+    <section id="about-leaders">
+      <h2>Meet Our Activity Leaders</h2>
+      <p>Explore our team of creative instructors and activity leaders.</p>
+
+      <div class="leaders-scroll">
+
+        <article class="leader-card">
+          <img src="images/leader-dana-alhelal.svg" alt="Dana Alhelal">
+          <h3><a href="profile-dana-alhelal.html">Dana Alhelal</a></h3>
+          <p>Paper recycling and bookbinding</p>
+          
+        </article>
+
+        <article class="leader-card">
+          <img src="images/leader-jana-alzimami.svg" alt="Jana Alzimami">
+          <h3><a href="profile-jana-alzimami.html">Jana Alzimami</a></h3>
+          <p>Glass and container reuse</p>
+          
+        </article>
+
+        <article class="leader-card">
+          <img src="images/leader-raneem-alsheddi.svg" alt="Raneem Alsheddi">
+          <h3><a href="profile-raneem-alsheddi.html">Raneem Alsheddi</a></h3>
+          <p>Denim and fabric upcycling</p>
+          
+        </article>
+
+        <article class="leader-card">
+          <img src="images/leader-arjwan-alwehaibi.svg" alt="Arjwan Alwehaibi">
+          <h3><a href="profile-arjwan-alwehaibi.html">Arjwan Alwehaibi</a></h3>
+          <p>Sustainable textiles</p>
+          
+        </article>
+
+        <article class="leader-card">
+          <img src="images/leader-noura-alqahtani.svg" alt="Noura Al-Qahtani">
+          <h3><a href="profile-noura-alqahtani.html">Noura Al-Qahtani</a></h3>
+          <p>Home decor upcycling</p>
+          
+        </article>
+
+        <article class="leader-card">
+          <img src="images/leader-rawan-alharbi.svg" alt="Rawan Al-Harbi">
+          <h3><a href="profile-rawan-alharbi.html">Rawan Al-Harbi</a></h3>
+          <p>Community engagement</p>
+          
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Join Our Team -->
+    <section id="join-team">
+      <h2>Join Our Team!</h2>
+      <p>Share your skills and creativity with our community.</p>
+
+      <form class="join-team-form" action="#" method="post" enctype="multipart/form-data">
+
+        <div class="form-field">
+          <label for="team-name">Full Name</label>
+          <input type="text" id="team-name" name="name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="team-photo">Photo</label>
+          <input type="file" id="team-photo" name="photo" accept="image/*" required>
+        </div>
+
+        <div class="form-field">
+          <label for="team-dob">Date of Birth</label>
+          <input type="date" id="team-dob" name="dob" max="2008-12-31" required>
+        </div>
+
+        <div class="form-field">
+          <label for="team-email">Email</label>
+          <input type="email" id="team-email" name="email" required>
+        </div>
+
+        <div class="form-field">
+          <label for="team-expertise">Area of Expertise</label>
+          <input type="text" id="team-expertise" name="expertise" required>
+        </div>
+
+        <div class="form-field">
+          <label for="team-skills">Skills</label>
+          <textarea id="team-skills" name="skills" rows="3" required></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="team-education">Education</label>
+          <input type="text" id="team-education" name="education" required>
+        </div>
+
+        <button type="submit" class="btn">Submit Application</button>
+      </form>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section id="about-faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>What does the club involve?</summary>
+        <p>Creative workshops that turn discarded materials into useful products.</p>
+      </details>
+
+      <details>
+        <summary>Is this a paid position?</summary>
+        <p>Our team welcomes volunteers who want to share their creative skills.</p>
+      </details>
+
+      <details>
+        <summary>How do I apply?</summary>
+        <p>Complete the Join Our Team application form above.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer">
+    <div class="container footer-row">
+
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span>Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-instagram"></i></span>Instagram</a></li>
+          <li><a href="https://x.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-x-twitter"></i></span>X</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-center">
+        <a href="index.html" class="footer-brand">
+          <img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="64" height="64">
+          <span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+        </a>
+        <p class="copyright"><small>&copy; RECRAFT HUB 2026. ALL RIGHTS RESERVED.</small></p>
+      </div>
+
+      <div class="footer-col contact-col">
+        <div>
+          <h4>Contact Us</h4>
+          <address>
+            <ul>
+              <li><span class="social-icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+966111234567">+966 11 123 4567</a></li>
+              <li><span class="social-icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:info@recrafthub.com">info@recrafthub.com</a></li>
+              <li><span class="social-icon"><i class="fa-solid fa-location-dot"></i></span>Riyadh, Saudi Arabia</li>
+            </ul>
+          </address>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Phase 3: applies the chosen theme -->
+  <script src="js/home.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

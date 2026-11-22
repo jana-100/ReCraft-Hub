@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReCraft Hub | Home</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/recraft-hub-logo.png" type="image/png">
+</head>
+<body>
+  <!-- Header: logo + navigation bar (Flexbox) -->
+  <header id="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="brand">
+        <img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="54" height="54">
+        <span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="offerings.html">Offerings</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a href="idea-board.html">Idea Board</a></li>
+          <!-- Phase 3: theme button -->
+          <li><button type="button" id="theme-toggle" title="Switch theme" aria-label="Switch theme"></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero: website name, logo and short description -->
+    <section id="hero">
+      <img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="120" height="120">
+      <h1>ReCraft <span class="hub">Hub</span></h1>
+      <p class="tagline">Give materials a second life.</p>
+      <p>Explore our offerings and be part of a more sustainable community.</p>
+    </section>
+
+    <!-- Featured offerings (Flexbox) -->
+    <section id="featured">
+      <div class="section-head">
+        <h2>Featured Offerings</h2>
+        <a href="offerings.html" class="section-link">View All &rarr;</a>
+      </div>
+      <div class="card-row">
+        <article class="offer-card">
+          <div class="card-img">
+            <img src="images/upcycled-planters.svg" alt="Upcycled Planters" width="600" height="400">
+            <!-- extra information, shown on :hover -->
+            <div class="offer-more">
+              <p><strong>Price:</strong> 45.00 SAR</p>
+              <p><strong>Duration:</strong> 2 hours</p>
+              <p><strong>When:</strong> Saturdays, 4:00 PM</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Upcycled Planters</h3>
+            <p>Beautiful planters made from reused materials.</p>
+            <ul class="tags">
+              <li class="tag">Home Decor</li>
+              <li class="tag tag-lavender">Eco-friendly</li>
+            </ul>
+          </div>
+        </article>
+        <article class="offer-card">
+          <div class="card-img">
+            <img src="images/recycled-notebooks.svg" alt="Recycled Notebooks" width="600" height="400">
+            <!-- extra information, shown on :hover -->
+            <div class="offer-more">
+              <p><strong>Price:</strong> 30.00 SAR</p>
+              <p><strong>Duration:</strong> 90 minutes</p>
+              <p><strong>When:</strong> Mondays, 6:00 PM</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Recycled Notebooks</h3>
+            <p>Handmade notebooks from recycled paper.</p>
+            <ul class="tags">
+              <li class="tag">Stationery</li>
+              <li class="tag tag-lavender">Recycled</li>
+            </ul>
+          </div>
+        </article>
+        <article class="offer-card">
+          <div class="card-img">
+            <img src="images/sustainable-tote-bags.svg" alt="Sustainable Tote Bags" width="600" height="400">
+            <!-- extra information, shown on :hover -->
+            <div class="offer-more">
+              <p><strong>Price:</strong> 55.00 SAR</p>
+              <p><strong>Duration:</strong> 2 sessions</p>
+              <p><strong>When:</strong> Wednesdays, 5:30 PM</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Sustainable Tote Bags</h3>
+            <p>Stylish and durable bags made from eco-friendly materials.</p>
+            <ul class="tags">
+              <li class="tag">Accessories</li>
+              <li class="tag tag-lavender">Handmade</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Club-member reviews -->
+    <section id="reviews">
+      <div class="section-head">
+        <h2>What People Are Saying</h2>
+        <a href="#leave-review" class="section-link">Write a Review &rarr;</a>
+      </div>
+      <div class="card-row">
+        <!-- one review = one div -->
+        <div class="review">
+          <div class="avatar"><svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="8" r="4.5" fill="#3F7D4A"/><path d="M3.5 21c0-4.6 3.8-7.5 8.5-7.5s8.5 2.9 8.5 7.5z" fill="#3F7D4A"/></svg></div>
+          <div class="review-text">
+            <p class="review-offering">Upcycled Planters</p>
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p><q>Amazing quality and such a creative idea!</q></p>
+            <p class="review-author">Sara A.</p>
+          </div>
+        </div>
+        <!-- one review = one div -->
+        <div class="review">
+          <div class="avatar"><svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="8" r="4.5" fill="#3F7D4A"/><path d="M3.5 21c0-4.6 3.8-7.5 8.5-7.5s8.5 2.9 8.5 7.5z" fill="#3F7D4A"/></svg></div>
+          <div class="review-text">
+            <p class="review-offering">Recycled Notebooks</p>
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p><q>Love the sustainable concept and the beautiful products.</q></p>
+            <p class="review-author">Reem M.</p>
+          </div>
+        </div>
+        <!-- one review = one div -->
+        <div class="review">
+          <div class="avatar"><svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="8" r="4.5" fill="#3F7D4A"/><path d="M3.5 21c0-4.6 3.8-7.5 8.5-7.5s8.5 2.9 8.5 7.5z" fill="#3F7D4A"/></svg></div>
+          <div class="review-text">
+            <p class="review-offering">Sustainable Tote Bags</p>
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p><q>Great community and easy to use!</q></p>
+            <p class="review-author">Lama K.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leave a review form -->
+    <section id="leave-review">
+      <h2>Leave a Review</h2>
+      <form action="#" method="post" class="form-panel">
+        <p class="form-field">
+          <label for="review-offering">Which Offering Did You Try?</label>
+          <select id="review-offering" name="offering">
+              <option value="">Select an offering</option>
+              <option value="upcycled-planters">Upcycled Planters</option>
+              <option value="recycled-notebooks">Recycled Notebooks</option>
+              <option value="sustainable-tote-bags">Sustainable Tote Bags</option>
+              <option value="glass-jar-lanterns">Glass Jar Lanterns</option>
+              <option value="denim-pouches">Denim Pouch Workshop</option>
+              <option value="community-swap-day">Community Swap Day</option>
+          </select>
+        </p>
+        <fieldset class="rating">
+          <legend>Rating:</legend>
+          <div class="star-rating">
+              <input type="radio" id="rate-5" name="rating" value="5">
+              <label for="rate-5" title="5 stars">&#9733;</label>
+              <input type="radio" id="rate-4" name="rating" value="4">
+              <label for="rate-4" title="4 stars">&#9733;</label>
+              <input type="radio" id="rate-3" name="rating" value="3">
+              <label for="rate-3" title="3 stars">&#9733;</label>
+              <input type="radio" id="rate-2" name="rating" value="2">
+              <label for="rate-2" title="2 stars">&#9733;</label>
+              <input type="radio" id="rate-1" name="rating" value="1">
+              <label for="rate-1" title="1 star">&#9733;</label>
+          </div>
+        </fieldset>
+        <p class="form-field">
+          <label for="review-name">Your Name</label>
+          <input type="text" id="review-name" name="name" placeholder="Enter your name">
+        </p>
+        <p class="form-field">
+          <label for="review-text">Your Feedback</label>
+          <textarea id="review-text" name="feedback" rows="4" placeholder="Share your experience..."></textarea>
+        </p>
+        <p><input type="submit" value="Post Review" class="btn"></p>
+      </form>
+    </section>
+
+    <!-- Extra section: Our Impact So Far -->
+    <section id="impact">
+      <h2>Our Impact So Far</h2>
+      <div class="card-row">
+        <div class="impact-card impact-green">
+          <div class="impact-icon"><svg viewBox="0 0 32 32" width="32" height="32"><path d="M6 26C6 13 14 6 27 5c0 13-7 21-19 21z" fill="#3F7D4A"/><path d="M7 25C12 19 17 14 23 10" stroke="#EAF5E8" stroke-width="2" fill="none"/></svg></div>
+          <div>
+            <p class="impact-number">520 kg</p>
+            <p>Material Diverted</p>
+          </div>
+        </div>
+        <div class="impact-card impact-blue">
+          <div class="impact-icon"><svg viewBox="0 0 32 32" width="32" height="32"><path d="M8 13a9 9 0 0 1 15-4" fill="none" stroke="#0F4D3F" stroke-width="3"/><path d="M24 19a9 9 0 0 1-15 4" fill="none" stroke="#0F4D3F" stroke-width="3"/><path d="M25 4v7h-7z" fill="#0F4D3F"/><path d="M7 28v-7h7z" fill="#0F4D3F"/></svg></div>
+          <div>
+            <p class="impact-number">1,240</p>
+            <p>Items Upcycled</p>
+          </div>
+        </div>
+        <div class="impact-card impact-lavender">
+          <div class="impact-icon"><svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="10" r="4.5" fill="#0F4D3F"/><circle cx="7.5" cy="12.5" r="3.2" fill="#3F7D4A"/><circle cx="24.5" cy="12.5" r="3.2" fill="#3F7D4A"/><path d="M8 27c0-5 3.6-8.5 8-8.5s8 3.5 8 8.5z" fill="#0F4D3F"/></svg></div>
+          <div>
+            <p class="impact-number">350</p>
+            <p>Members Reached</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: social media, logo + copyright, contact -->
+  <footer id="site-footer">
+    <div class="container footer-row">
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span>Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-instagram"></i></span>Instagram</a></li>
+          <li><a href="https://x.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-x-twitter"></i></span>X</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-center">
+        <a href="index.html" class="footer-brand">
+          <img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="64" height="64">
+          <span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+        </a>
+        <p class="copyright"><small>&copy; RECRAFT HUB 2026. ALL RIGHTS RESERVED.</small></p>
+        <!-- Phase 3: clock -->
+        <p class="footer-clock" id="footer-clock"></p>
+      </div>
+      <div class="footer-col contact-col">
+        <div>
+          <h4>Contact Us</h4>
+          <address>
+            <ul>
+              <li><span class="social-icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+966111234567">+966 11 123 4567</a></li>
+              <li><span class="social-icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:info@recrafthub.com">info@recrafthub.com</a></li>
+              <li><span class="social-icon"><i class="fa-solid fa-location-dot"></i></span>Riyadh, Saudi Arabia</li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Phase 3: Back to Top button -->
+  <button type="button" id="back-to-top" title="Back to top">&uarr;</button>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

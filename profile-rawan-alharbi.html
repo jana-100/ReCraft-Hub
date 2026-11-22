@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rawan Al-Harbi | ReCraft Hub</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/recraft-hub-logo.png" type="image/png">
+</head>
+<body>
+  <!-- Header: logo + navigation bar (Flexbox) -->
+  <header id="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="brand">
+        <img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="54" height="54">
+        <span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offerings.html">Offerings</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a href="idea-board.html">Idea Board</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumb container">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="current">Profile</li>
+    </ol>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title">Activity Leader Profile</h1>
+
+    <!-- Profile table: the name cell spans all columns (colspan) -->
+    <table id="profile-table">
+      <tr>
+        <th colspan="2" class="name-cell">Rawan Al-Harbi</th>
+      </tr>
+      <tr>
+        <th>Photo</th>
+        <td><img src="images/leader-rawan-alharbi.svg" alt="Photo of Rawan Al-Harbi" width="120" height="120" class="profile-photo"></td>
+      </tr>
+      <tr>
+        <th>Date of Birth</th>
+        <td>07/06/1998</td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td><a href="mailto:rawan.alharbi@recrafthub.com">rawan.alharbi@recrafthub.com</a></td>
+      </tr>
+      <tr>
+        <th>Area of Expertise</th>
+        <td>Community engagement</td>
+      </tr>
+      <tr>
+        <th>Skills</th>
+        <td>Event planning, volunteer coordination, public speaking</td>
+      </tr>
+      <tr>
+        <th>Education</th>
+        <td>B.B.A. Management, King Saud University</td>
+      </tr>
+    </table>
+
+    <p class="back-link"><a href="about.html" class="btn btn-outline">Back to About Us</a></p>
+  </main>
+
+  <!-- Footer: social media, logo + copyright, contact -->
+  <footer id="site-footer">
+    <div class="container footer-row">
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span>Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-instagram"></i></span>Instagram</a></li>
+          <li><a href="https://x.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-x-twitter"></i></span>X</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-center">
+        <a href="index.html" class="footer-brand">
+          <img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="64" height="64">
+          <span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+        </a>
+        <p class="copyright"><small>&copy; RECRAFT HUB 2026. ALL RIGHTS RESERVED.</small></p>
+      </div>
+      <div class="footer-col contact-col">
+        <div>
+          <h4>Contact Us</h4>
+          <address>
+            <ul>
+              <li><span class="social-icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+966111234567">+966 11 123 4567</a></li>
+              <li><span class="social-icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:info@recrafthub.com">info@recrafthub.com</a></li>
+              <li><span class="social-icon"><i class="fa-solid fa-location-dot"></i></span>Riyadh, Saudi Arabia</li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Phase 3: applies the chosen theme -->
+  <script src="js/home.js"></script>
+</body>
+</html>
