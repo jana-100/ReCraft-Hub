@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReCraft Hub | Idea Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/recraft-hub-logo.png" type="image/png">
+</head>
+<body>
+<!-- Header: logo + navigation bar (Flexbox) -->
+<header id="site-header">
+<div class="container header-row">
+<a href="index.html" class="brand">
+<img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="54" height="54">
+<span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+</a>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="offerings.html">Offerings</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="member-dashboard.html">Member Dashboard</a></li>
+<li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+<li><a href="idea-board.html" class="active">Idea Board</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<!-- Breadcrumb -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">Home</a></li>
+<li class="current">Idea Board</li>
+</ol>
+</nav>
+
+<!-- Page title -->
+<section id="idea-intro">
+<h1 class="page-title">Idea Exchange Board</h1>
+<p style="text-align: center;">Share your upcycling ideas and get inspired by what other members are making from discarded materials.</p>
+</section>
+
+<!-- Share an idea form -->
+<section id="share-idea">
+<h2>Share an Idea</h2>
+<form id="idea-form" action="#" method="post" enctype="multipart/form-data" class="form-panel">
+<p class="form-field">
+<label for="member-name">Your Name</label>
+<input type="text" id="member-name" name="member_name" placeholder="Enter your name">
+</p>
+<p class="form-field">
+<label for="idea-title">Idea Title</label>
+<input type="text" id="idea-title" name="idea_title" placeholder="Enter idea title">
+</p>
+<p class="form-field">
+<label for="idea-description">Description</label>
+<textarea id="idea-description" name="idea_description" rows="5" placeholder="Describe your idea here..."></textarea>
+</p>
+<p><input type="submit" value="Post Idea" class="btn"></p>
+</form>
+</section>
+
+<!-- Ideas from members -->
+<section id="ideas">
+<h2>Member Ideas</h2>
+<div class="card-row" id="ideas-row">
+<article class="offer-card idea-card">
+<img src="images/idea-bottle-planter.svg" alt="Plastic bottle used as a hanging planter" width="600" height="400">
+<div class="card-body">
+<h3>Bottle Planters</h3>
+<p>Turn used plastic bottles into hanging planters for herbs and small flowers.</p>
+<p class="review-author">&mdash; Submitted by Sara</p>
+</div>
+</article>
+
+<article class="offer-card idea-card">
+<img src="images/idea-denim-bag.svg" alt="Tote bag made from old denim" width="600" height="400">
+<div class="card-body">
+<h3>Denim Tote Bag</h3>
+<p>Old jeans can be cut and sewn into a strong, stylish tote bag.</p>
+<p class="review-author">&mdash; Submitted by Noura</p>
+</div>
+</article>
+
+<article class="offer-card idea-card">
+<img src="images/idea-pallet-shelf.svg" alt="Shelf made from a wood pallet" width="600" height="400">
+<div class="card-body">
+<h3>Pallet Shelf</h3>
+<p>Wood pallets sanded and painted make a rustic shelf for books or plants.</p>
+<p class="review-author">&mdash; Submitted by Lama</p>
+</div>
+</article>
+
+<article class="offer-card idea-card">
+<img src="images/idea-jar-lamp.svg" alt="Glass jar turned into a lamp" width="600" height="400">
+<div class="card-body">
+<h3>Glass Jar Lamp</h3>
+<p>Reuse glass jars with fairy lights to create a warm decorative lamp.</p>
+<p class="review-author">&mdash; Submitted by Reem</p>
+</div>
+</article>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer id="site-footer">
+<div class="container footer-row">
+<div class="footer-col">
+<h4>Social Media</h4>
+<ul>
+<li><a href="https://www.facebook.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span>Facebook</a></li>
+<li><a href="https://www.instagram.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-instagram"></i></span>Instagram</a></li>
+<li><a href="https://x.com/" target="_blank"><span class="social-icon"><i class="fa-brands fa-x-twitter"></i></span>X</a></li>
+</ul>
+</div>
+<div class="footer-col footer-center">
+<a href="index.html" class="footer-brand">
+<img src="images/recraft-hub-logo.png" alt="ReCraft Hub logo" width="64" height="64">
+<span class="brand-name">ReCraft <span class="hub">Hub</span></span>
+</a>
+<p class="copyright"><small>&copy; RECRAFT HUB 2026. ALL RIGHTS RESERVED.</small></p>
+</div>
+<div class="footer-col contact-col">
+<div>
+<h4>Contact Us</h4>
+<address>
+<ul>
+<li><span class="social-icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+966111234567">+966 11 123 4567</a></li>
+<li><span class="social-icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:info@recrafthub.com">info@recrafthub.com</a></li>
+<li><span class="social-icon"><i class="fa-solid fa-location-dot"></i></span>Riyadh, Saudi Arabia</li>
+</ul>
+</address>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="js/idea-board.js"></script>
+
+  <!-- Phase 3: applies the chosen theme -->
+  <script src="js/home.js"></script>
+</body>
+</html>
